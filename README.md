@@ -3,7 +3,7 @@
 #### By Sean McDermott
 
 ## Description
-* This application will allow users to keep track of their disc gold scores.
+* This is an attempted clone of https://udisclive.com/
 
 
 ## Specifications
