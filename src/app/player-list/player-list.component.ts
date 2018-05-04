@@ -12,7 +12,7 @@ export class PlayerListComponent {
 
   selectedPlayer = null;
 
-  editButtonClicked(playerToEdit: PlayerCreator) {
+  editPlayerClicked(playerToEdit: PlayerCreator) {
     this.clickSender.emit(playerToEdit);
   }
 
