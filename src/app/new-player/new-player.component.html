@@ -1,3 +1,19 @@
-<p>
-  new-player works!
-</p>
+<div class="card" *ngIf="newPlayer">
+  <h1>Enter a New Player:</h1>
+  <div>
+    <label>Enter First Name:</label><br>
+    <input #firstName>
+  </div>
+  <div>
+    <label>Enter Last Name:</label>
+    <input #lastName>
+  </div>
+  <div>
+    <label>Enter Starting Score:</label>
+    <input #score>
+  </div>
+  <div class="">
+    <button (click)="submitForm(firstName.value, lastName.value, score.value); firstName.valu=''; lastName.value=''; score.value=';'">Add Player</button>
+    <button (click)="finishedNewPlayer()">Done</button>
+  </div>
+</div>
