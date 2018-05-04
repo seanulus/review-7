@@ -1,0 +1,11 @@
+<div class="card" *ngIf="childSelectedPlayer">
+  <h2>Edit Player Info:</h2>
+  <h3>{{childSelectedPlayer.firstName}} {{childSelectedPlayer.lastName}}</h3>
+  <label>Enter a New First Name:</label>
+  <input [(ngModel)]='childSelectedPlayer.firstName'><br>
+  <label>Enter a New Last Name:</label>
+  <input [(ngModel)]='childSelectedPlayer.lastName'><br>
+  <label>Edit Your Score:</label>
+  <input [(ngModel)]='childSelectedPlayer.score'>
+  <button class="btn" (click)="finishedEditing">Done</button>
+</div>
