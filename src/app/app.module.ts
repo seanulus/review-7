@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewPlayerComponent
+    NewPlayerComponent,
+    EditPlayerComponent
   ],
   imports: [
     BrowserModule,
