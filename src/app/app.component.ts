@@ -7,7 +7,7 @@ import { PlayerCreator } from './model/player-model'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'UDisc Live';
   masterPlayerList: PlayerCreator[] = [
     new PlayerCreator('Sean', 'McDermott', []),
     new PlayerCreator('Abigail', 'Wallace', []),
