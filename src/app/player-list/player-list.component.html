@@ -1,3 +1,16 @@
-<p>
-  player-list works!
-</p>
+<h1>Players:</h1>
+<div class="row">
+  <div class="card" *ngFor="let player of childPlayersList">
+    <div class="row">
+      <div class="col-md-4">
+        <p>{{player.firstName}} {{player.lastName}}</p>
+      </div>
+      <div class="col-md-4">
+        <p>{{player.score}}</p>
+      </div>
+      <div class="col-md-4">
+        <button class="btn" (click)="editPlayerClicked(player)">Edit Player</button>
+      </div>
+    </div>
+  </div>
+</div>

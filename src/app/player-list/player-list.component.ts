@@ -10,7 +10,7 @@ export class PlayerListComponent {
   @Input() childPlayersList: PlayerCreator[];
   @Output() clickSender = new EventEmitter();
 
-  slectedPlayer = null;
+  selectedPlayer = null;
 
   editButtonClicked(playerToEdit: PlayerCreator) {
     this.clickSender.emit(playerToEdit);
