@@ -1,8 +1,10 @@
 .card {
   width: 90%;
+  min-height: 10%;
   margin-top: 10px;
-  padding: 5px;
+  padding: 2%;
   margin-left: 5%;
+  background-color: #6e7b91;
 }
 
 .btn {
