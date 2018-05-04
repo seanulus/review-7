@@ -13,4 +13,8 @@ export class AppComponent {
     new PlayerCreator('Abigail', 'Wallace', []),
     new PlayerCreator('Walt', 'Whitman', [])
   ]
+
+  addPlayer(newPlayer: PlayerCreator) {
+    this.masterPlayerList.push(newPlayer);
+  }
 }
