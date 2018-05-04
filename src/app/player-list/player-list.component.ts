@@ -9,12 +9,17 @@ import { PlayerCreator } from '../model/player-model';
 export class PlayerListComponent {
   @Input() childPlayersList: PlayerCreator[];
   @Output() clickSender = new EventEmitter();
+  @Output() scoreSender = new EventEmitter();
 
   selectedPlayer = null;
   scoreArray = [];
 
   editPlayerClicked(playerToEdit: PlayerCreator) {
     this.clickSender.emit(playerToEdit);
+  }
+  //Trying to push score values to an array to be displayed in the table.
+  editScoreClicked(playerToEdit: PlayerCreator[3]) {
+
   }
 
   birdie(clickedPlayer) {
