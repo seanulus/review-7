@@ -8,14 +8,21 @@ import { PlayerCreator } from '../model/player-model'
 export class NewPlayerComponent {
   @Output() sendPlayer = new EventEmitter();
 
-  submitForm(firstName: string, lastName: string, score: Array<number>) {
+  newPlayer = false;
+
+  submitForm(firstName: string, lastName: string, score: number) {
     let newPlayer: PlayerCreator = new PlayerCreator(firstName, lastName, score);
     this.sendPlayer.emit(newPlayer);
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  newPlayer1() {
+    this.newPlayer = true;
   }
+
+  finishedNewPlayer() {
+    this.newPlayer = false;
+  }
+
+  constructor() { }
 
 }
