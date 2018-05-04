@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { PlayerListComponent } from './player-list/player-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NewPlayerComponent,
-    EditPlayerComponent
+    EditPlayerComponent,
+    PlayerListComponent
   ],
   imports: [
     BrowserModule,
