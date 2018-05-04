@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.banner {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScZFtvEKncn-3b7RDf3qNfb76eVtq8rE3sJ61HN8Kbe71m9E0I);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  float: left;
+}
