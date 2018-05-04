@@ -9,9 +9,9 @@ import { PlayerCreator } from './model/player-model'
 export class AppComponent {
   title = 'UDisc Live';
   masterPlayerList: PlayerCreator[] = [
-    new PlayerCreator('Sean', 'McDermott', 4),
-    new PlayerCreator('Abigail', 'Wallace', 6),
-    new PlayerCreator('Walt', 'Whitman', 5)
+    new PlayerCreator('Sean', 'McDermott', 0),
+    new PlayerCreator('Abigail', 'Wallace', 0),
+    new PlayerCreator('Walt', 'Whitman', 0)
   ]
 
   selectedPlayer = null;

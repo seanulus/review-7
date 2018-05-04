@@ -16,6 +16,17 @@ export class PlayerListComponent {
     this.clickSender.emit(playerToEdit);
   }
 
+  birdie(clickedPlayer) {
+    clickedPlayer.score -= 1;
+  }
+
+  par(clickedPlayer) {
+    clickedPlayer.score += 0;
+  }
+
+  bogey(clickedPlayer) {
+    clickedPlayer.score += 1;
+  }
   constructor() { }
 
 }

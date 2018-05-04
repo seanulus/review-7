@@ -4,6 +4,10 @@
   background-size: cover;
 }
 
+.bannerText {
+  color: white;
+}
+
 body {
   background-color: #dee3ea;
 }
