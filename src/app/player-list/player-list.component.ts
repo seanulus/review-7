@@ -11,6 +11,7 @@ export class PlayerListComponent {
   @Output() clickSender = new EventEmitter();
 
   selectedPlayer = null;
+  scoreArray = [];
 
   editPlayerClicked(playerToEdit: PlayerCreator) {
     this.clickSender.emit(playerToEdit);
@@ -18,14 +19,17 @@ export class PlayerListComponent {
 
   birdie(clickedPlayer) {
     clickedPlayer.score -= 1;
+    this.scoreArray.push(2)
   }
 
   par(clickedPlayer) {
     clickedPlayer.score += 0;
+    this.scoreArray.push(3);
   }
 
   bogey(clickedPlayer) {
     clickedPlayer.score += 1;
+    this.scoreArray.push(4);
   }
   constructor() { }
 
