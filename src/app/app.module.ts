@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PlayerListComponent } from './player-list/player-list.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { NewPlayerComponent } from './new-player/new-player.component';
+import { NamePipe } from './name.pipe';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { NewPlayerComponent } from './new-player/new-player.component';
     AppComponent,
     PlayerListComponent,
     EditPlayerComponent,
-    NewPlayerComponent
+    NewPlayerComponent,
+    NamePipe
   ],
   imports: [
     BrowserModule,

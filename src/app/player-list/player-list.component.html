@@ -1,6 +1,9 @@
 <h1>Players:</h1>
+<label for="search">Search By First Name:</label>
+<input #searchName type="text">
+<button (click)="runName(searchName.value)" class="btn btn-success btn-sm search">Search</button>
 <div class="row">
-  <div class="card" *ngFor="let player of childPlayersList">
+  <div class="card" *ngFor="let player of childPlayersList | name:filterByName">
     <div class="row">
       <div class="col-md-2">
         <h5>{{player.firstName}} {{player.lastName}}</h5>
@@ -37,7 +40,7 @@
           <tbody>
             <tr>
               <th scope="row">Strokes</th>
-              <td>{{player.scoreArray[0]}}</td>
+              <td></td>
               <td></td>
               <td></td>
               <td></td>

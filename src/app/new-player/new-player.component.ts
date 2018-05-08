@@ -10,8 +10,8 @@ export class NewPlayerComponent {
 
   newPlayer = false;
 
-  submitForm(firstName: string, lastName: string, score: number) {
-    let newPlayer: PlayerCreator = new PlayerCreator(firstName, lastName, score);
+  submitForm(firstName: string, lastName: string, score: number, scoreArray: Array<number>) {
+    let newPlayer: PlayerCreator = new PlayerCreator(firstName, lastName, score, scoreArray);
     this.sendPlayer.emit(newPlayer);
   }
 

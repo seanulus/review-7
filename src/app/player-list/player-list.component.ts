@@ -13,13 +13,19 @@ export class PlayerListComponent {
 
   selectedPlayer = null;
   scoreArray = [];
+  filterByName: string = "";
+
 
   editPlayerClicked(playerToEdit: PlayerCreator) {
     this.clickSender.emit(playerToEdit);
   }
   //Trying to push score values to an array to be displayed in the table.
-  editScoreClicked(playerToEdit: PlayerCreator[3]) {
+  // editScoreClicked(playerToEdit: PlayerCreator[3]) {
+  //
+  // }
 
+  runName(searchName) {
+    this.filterByName = searchName;
   }
 
   birdie(clickedPlayer) {
@@ -36,6 +42,11 @@ export class PlayerListComponent {
     clickedPlayer.score += 1;
     this.scoreArray.push(4);
   }
+
+  onChange(optionFromMenu) {
+      this.filterByName = optionFromMenu;
+  }
+
   constructor() { }
 
 }
