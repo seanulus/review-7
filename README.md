@@ -8,9 +8,14 @@
 
 ## Specifications
 
+### Completed
 * Users should be able to add/edit their names.
+* Users should be able to receive a total score.
+* Users should be able to sort by name.
+
+
+### in Progress
 * Users should be able to input their scores for each hole.
-* Users should be able to receive a total score based on the above inputs.
 * Users should be able to store data for previously played games.
 * Users should be able to view the leaderboard to see how they compare to other users.
 
