@@ -12,7 +12,7 @@ export class PlayerListComponent {
   @Output() scoreSender = new EventEmitter();
 
   selectedPlayer = null;
-  scoreArray = [];
+  // scoreArray = [];
   filterByName: string = "";
 
 
@@ -30,17 +30,18 @@ export class PlayerListComponent {
 
   birdie(clickedPlayer) {
     clickedPlayer.score -= 1;
-    this.scoreArray.push(2)
+    clickedPlayer.scoreArray.push(2);
+    console.log(clickedPlayer.scoreArray);
   }
 
   par(clickedPlayer) {
     clickedPlayer.score += 0;
-    this.scoreArray.push(3);
+    clickedPlayer.scoreArray.push(3);
   }
 
   bogey(clickedPlayer) {
     clickedPlayer.score += 1;
-    this.scoreArray.push(4);
+    clickedPlayer.scoreArray.push(4);
   }
 
   onChange(optionFromMenu) {
